@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Responsive Redesign UIUX</h1>
+    </div>
+    <div class="section">
+      <div class="section-title">
+        <h3>Assignment Introduction and Summary</h3>
+      </div>
+      <div id="overview">
+        <ul>
+          <li>
+            This assignment, for CSCI 1300 at Brown University, instructed us to
+            find a website that had design flaws and recreate it using HTML and
+            CSS to be more responsive and user friendly.
+          </li>
+          <li>
+            We also had to create lo-fi and hi-fi prototypes for our design on 3
+            different screen sizes.
+          </li>
+          <li>
+            I chose the website of Fellini's Pizzeria, a local pizza restaurant,
+            because it is a restaurant that I think makes good pizza, but which
+            has a website that I have been frustrated with in the past.
+          </li>
+          <li>
+            Original link:
+            <a href="https://www.fellinipizzeria.com/index.html">
+              https://www.fellinipizzeria.com/index.html
+            </a>
+          </li>
+          <li>
+            My redesigned site:
+            <a href="https://angrypanda160.github.io/FellinisRedesign/"
+              >https://angrypanda160.github.io/FellinisRedesign/</a
+            >
+          </li>
+        </ul>
+        <img
+          id="initial"
+          src="fellinis-screenshot.png"
+          alt="screenshot of original website"
+        />
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">
+        <h3>Issues</h3>
+      </div>
+      <div id="issues">
+        <div class="subsection-title">
+          <h4>My Problems</h4>
+        </div>
+        <ul>
+          <li>
+            Navigation bar is not fixed on computer, leading to unnecessary
+            scrolling when navigating between parts of the site or when trying
+            to order (Nav bar is fixed to the bottom on mobile).
+          </li>
+          <li>
+            Unclear which button allows for online ordering: it only says
+            Toasttab, the site used for online orders, and it has the same
+            design as the other links.
+          </li>
+          <li>
+            Online ordering button only allows for ordering at one location, it
+            is unclear whether online ordering is supported for the other
+            location.
+          </li>
+          <li>
+            The hierarchy is off in the location information, with the contact
+            label having the same header size as the restaurant names.
+          </li>
+          <li>
+            The Slices header at the bottom of the Pizzas section is
+            disconnected from the slice prices.
+          </li>
+          <li>
+            Tight 2 column layout for menu items on the computer can make it
+            hard to scan the menu, since there are multiple lines per item.
+          </li>
+        </ul>
+        <div class="subsection-title">
+          <h4>Accessibility</h4>
+        </div>
+        <p>
+          In addition to identifying our own problems, we ran the website
+          through the WAVE accessibility checker to find other errors. Here are
+          some of the most pressing:
+        </p>
+        <ul>
+          <li>No page language tag</li>
+          <li>2 empty heading tags</li>
+          <li>
+            2 cases of low contrast text (the text was over a sufficiently dark
+            image that WAVE did not pick up on)
+          </li>
+          <li>Multiple skipped heading levels (no h2 between h1 and h3)</li>
+        </ul>
+        <p>
+          I thought these problems were generally valid, although the low
+          contrast text was not really a problem if the image loaded correctly.
+          I also noticed that the images were missing alt text, but wave did not
+          pick up on that since they were displayed as the backgrounds of divs.
+        </p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">
+        <h3>Wireframes</h3>
+      </div>
+
+      <div class="d-flex justify-content-evenly">
+        <img
+          class="border-end border-dark pe-3"
+          src="Mobile Wireframe.png"
+          alt="mobile wireframe"
+        />
+        <img src="Tablet Wireframe.png" alt="tablet wireframe" />
+      </div>
+      <img
+        class="w-75 pt-3"
+        src="Laptop Wireframe.png"
+        alt="laptop wireframe"
+      />
+    </div>
+    <div class="section">
+      <div class="section-title">
+        <h3>Visual Style Guide</h3>
+      </div>
+      <img class="mw-100" src="Style-guide.png" alt="tablet wireframe" />
+    </div>
+    <div class="section">
+      <div class="section-title">
+        <h3>Figma Prototypes</h3>
+      </div>
+
+      <img
+        class="border-end border-dark pe-3"
+        src="mobile-figma.png"
+        alt="mobile figma prototype"
+      />
+      <img class="mw-100" src="tablet-figma.png" alt="tablet figma prototype" />
+
+      <img
+        class="w-100 pt-3"
+        src="laptop-figma.png"
+        alt="laptop figma prototype"
+      />
+    </div>
+    <div class="section">
+      <div class="section-title">
+        <h3>Final Website</h3>
+      </div>
+      <p>
+        Visit the final website here:
+        <a href="https://angrypanda160.github.io/FellinisRedesign/"
+          >https://angrypanda160.github.io/FellinisRedesign/</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
